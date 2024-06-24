@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".FarmerLoginActivity"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_arrow_back_24"/>
+    <!--<ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_arrow_back_24"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farmer Login"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:id="@+id/txt3"
+        android:textColor="@color/Green"
+        />
+
+   <!--<EditText
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Farmer Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edittextview" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        android:background="@drawable/edittextview"
+        android:textColor="@color/black"
+        android:layout_marginTop="140dp"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        />
+-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="@color/black"
+        app:passwordToggleTint="@color/black"
+        android:layout_below="@+id/txt3"
+        android:background="@drawable/edittextview"
+        android:layout_marginTop="40dp"
+        android:id="@+id/txtinput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Username"
+            app:hintTextColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        app:boxStrokeWidth="0dp"
+        android:background="@drawable/edittextview"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="@color/black"
+        app:passwordToggleDrawable="@drawable/password_toggle"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/Green"
+        android:layout_below="@+id/txtinput"
+        android:id="@+id/txtinput1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:hintTextColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"
+        android:layout_below="@+id/txtinput1"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombtn"
+        android:text="Sign Up"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnsignin1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/forget_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtsignup"
+        android:textAlignment="center"
+        android:textColor="@color/Green"
+        />
+
+
+
+</RelativeLayout>

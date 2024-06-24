@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSchemeAct"
+    android:padding="40dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Create Scheme"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/txt_vw"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/Green" />
+
+    <EditText
+        android:id="@+id/schemename"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Scheme Name"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/Gray"
+        android:padding="10dp"
+        android:layout_below="@+id/txt_vw"
+        android:textColor="@color/black"
+        android:background="@drawable/edittextview"/>
+
+    <EditText
+        android:id="@+id/schemetype"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Scheme Type"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/schemename"
+        android:padding="10dp"
+        android:textColorHint="@color/Gray"
+        android:background="@drawable/edittextview"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/eligibility"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Duration"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/schemetype"
+        android:textColorHint="@color/Gray"
+        android:background="@drawable/edittextview"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Link"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/eligibility"
+        android:textColorHint="@color/Gray"
+        android:background="@drawable/edittextview"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Create"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/duration"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/apply"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/update"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"/>
+
+
+</RelativeLayout>

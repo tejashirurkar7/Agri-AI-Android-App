@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddScheme"
+    android:padding="40dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="Scheme"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/txt_vw"
+        android:textColor="@color/Green"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createscheme"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_vw"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="Create Scheme"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewscheme"
+        android:layout_width="300dp"
+        android:textAlignment="center"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="View Scheme"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/createscheme"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"/>
+
+</RelativeLayout>

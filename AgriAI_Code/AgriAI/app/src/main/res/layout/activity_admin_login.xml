@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLoginActivity"
+    android:padding="40dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/Green"
+        android:id="@+id/txtinputlogin"
+        />
+
+    <!--<EditText
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Admin Name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="70dp"/>-->
+
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="@color/black"
+        app:passwordToggleTint="@color/black"
+        android:background="@drawable/edittextview"
+        android:layout_marginTop="40dp"
+        android:id="@+id/txtinput"
+        android:layout_below="@id/txtinputlogin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Username"
+            app:hintTextColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        app:boxStrokeWidth="0dp"
+        android:background="@drawable/edittextview"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="@color/black"
+        app:passwordToggleDrawable="@drawable/password_toggle"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/Green"
+        android:layout_below="@+id/txtinput"
+        android:id="@+id/txtinput1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:hintTextColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@+id/username1"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/txtinput1"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"
+        />
+
+</RelativeLayout>

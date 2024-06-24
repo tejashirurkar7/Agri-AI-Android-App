@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetActivity"
+    android:padding="40dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your Username"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/Green"
+        android:id="@+id/txtforget"
+        />
+
+    <EditText
+        android:id="@+id/user_name_frg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="User Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/txtforget"
+        android:background="@drawable/edittextview"
+        android:paddingLeft="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reset_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/user_name_frg"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"/>
+
+</RelativeLayout>

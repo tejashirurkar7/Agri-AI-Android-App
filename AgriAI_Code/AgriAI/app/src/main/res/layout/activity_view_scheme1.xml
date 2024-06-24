@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewScheme1"
+    android:background="@color/white">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Scheme"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textColor="@color/whiteTextColor"
+        android:id="@id/txt_feedbackview"
+        android:background="@color/Green"
+        />
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/cardviewscheme"
+        android:elevation="8dp"
+        android:layout_below="@+id/txt_feedbackview">
+        <!--text view for our course name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".rv_layout">
+
+            <!--text view for our course name-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Name : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pradhanmantri Krishi Sinchayee Yojana"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Type : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeEligibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farming fund"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--text view for our course tracks-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Duration : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Years"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/link"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Apply"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="210dp"
+                    android:background="@drawable/custombtn"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/cardviewscheme1"
+        android:elevation="8dp"
+        android:layout_below="@+id/cardviewscheme">
+        <!--text view for our course name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".rv_layout">
+
+            <!--text view for our course name-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Name : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pradhan Mantri Fasal Bima Yojana"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Type : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeEligibility1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farming fund"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--text view for our course tracks-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Duration : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeDuration1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Years"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/link1"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Apply"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="210dp"
+                    android:background="@drawable/custombtn"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/cardviewscheme2"
+        android:elevation="8dp"
+        android:layout_below="@+id/cardviewscheme1">
+        <!--text view for our course name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".rv_layout">
+
+            <!--text view for our course name-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Name : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crop Insurance Schemes "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Type : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeEligibility2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farming fund"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--text view for our course tracks-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Duration : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeDuration2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Years"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/link2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Apply"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="210dp"
+                    android:background="@drawable/custombtn"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/cardviewscheme3"
+        android:elevation="8dp"
+        android:layout_below="@+id/cardviewscheme2">
+        <!--text view for our course name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".rv_layout">
+
+            <!--text view for our course name-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Name : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PM Kisan Maan Dhan Yojana "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Type : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeEligibility3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farming fund"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--text view for our course tracks-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Duration : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeDuration3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age of 18-40 years"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/link3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Apply"
+                    android:layout_marginLeft="210dp"
+                    android:background="@drawable/custombtn"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardviewscheme3"
+
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyscheme"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="230dp"
+        android:text="Apply"
+        android:background="@drawable/custombtn"
+        android:textColor="@color/white"/>
+
+  <!--  <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyscheme1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="230dp"
+        android:text="Apply"
+        android:background="@color/BlueGreen"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyscheme2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="230dp"
+        android:text="Apply"
+        android:background="@color/BlueGreen"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyscheme3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="230dp"
+        android:text="Apply"
+        android:background="@color/BlueGreen"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyscheme4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="230dp"
+        android:text="Apply"
+        android:background="@color/BlueGreen"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyscheme5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="230dp"
+        android:text="Apply"
+        android:background="@color/BlueGreen"
+        android:textColor="@color/white"/>-->
+
+</RelativeLayout>

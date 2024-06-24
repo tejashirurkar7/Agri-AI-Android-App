@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgriAI"
+        tools:targetApi="31">
+       <!-- <activity
+            android:name=".ThirdFragment"
+            android:exported="false" />
+        <activity
+            android:name=".SecondFragment"
+            android:exported="false" />
+        <activity
+            android:name=".FirstFragment"
+            android:exported="false" />-->
+        <activity
+            android:name=".buldhanaPieChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sataraPieChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SangliPieChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PieChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewScheme1"
+            android:exported="false" />
+        <activity
+            android:name=".ViewScheme"
+            android:exported="false" />
+        <activity
+            android:name=".CreateSchemeAct"
+            android:exported="false" />
+        <activity
+            android:name=".ViewFarmar"
+            android:exported="false" />
+        <activity
+            android:name=".ViewFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".AddScheme"
+            android:exported="false" />
+        <activity
+            android:name=".AddFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".WeatherForcast"
+            android:exported="false" />
+        <activity
+            android:name=".PredictionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerHomeActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".FarmerRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

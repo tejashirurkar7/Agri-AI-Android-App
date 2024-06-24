@@ -1,0 +1,24 @@
+<resources>
+    <string-array name="cities">
+        <item>Nashik</item>
+        <item>Sangli</item>
+        <item>Satara</item>
+        <item>Buldhana</item>
+    </string-array>
+
+    <string-array name="nashik_towns">
+        <item>Niphad</item>
+    </string-array>
+
+    <string-array name="sangli_towns">
+        <item>Tasgaon</item>
+    </string-array>
+
+    <string-array name="satara_towns">
+        <item>Wai</item>
+    </string-array>
+
+    <string-array name="buldhana_towns">
+        <item>Khamgaon</item>
+    </string-array>
+</resources>

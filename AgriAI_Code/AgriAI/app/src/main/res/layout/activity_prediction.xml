@@ -1,0 +1,267 @@
+<!-- activity_prediction.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictionActivity"
+    android:padding="40dp"
+    android:background="@color/white">
+
+
+ <ImageView
+     android:id="@+id/imageview"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/baseline_arrow_back_24"/>
+
+ <!--<TextView
+     android:id="@+id/districtLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="District:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_marginTop="50dp"/>
+
+ <Spinner
+     android:id="@+id/districtEditText"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_below="@id/districtLabel"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:textSize="16sp"/>
+
+ <TextView
+     android:id="@+id/talukaLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Taluka:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/districtEditText"
+     android:layout_marginTop="20dp"/>
+
+ <Spinner
+     android:id="@+id/talukaEditText"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_below="@id/talukaLabel"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:textSize="16sp"/>-->
+
+ <TextView
+     android:id="@+id/districtLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="District:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_marginTop="50dp"/>
+ <Spinner
+     android:id="@+id/citySpinner"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:entries="@array/cities"
+     android:layout_below="@+id/districtLabel"/>
+ <TextView
+     android:id="@+id/talukaLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Taluka:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/citySpinner"
+     android:layout_marginTop="20dp"/>
+
+ <Spinner
+     android:id="@+id/townSpinner"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:layout_below="@id/talukaLabel"/>
+
+ <TextView
+     android:id="@+id/weatherLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Taluka:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/townSpinner"
+     android:layout_marginTop="20dp"/>
+
+ <Spinner
+     android:id="@+id/weatherEditText"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_below="@id/weatherLabel"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:textSize="16sp"/>
+
+ <!--<TextView
+     android:id="@+id/soilLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Soil Type:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/weatherEditText"
+     android:layout_marginTop="20dp"/>
+
+ <Spinner
+     android:id="@+id/soilEditText"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_below="@id/soilLabel"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:textSize="16sp"/>-->
+
+
+ <!--<TextView
+     android:id="@+id/weatherLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Weather Condition:"
+     android:textSize="16sp"
+     android:textColor="@color/Green"
+     android:textStyle="bold"
+     android:layout_below="@id/talukaEditText"
+     android:layout_marginTop="20dp"/>-->
+
+ <!--<EditText
+     android:id="@+id/weatherEditText"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/weatherLabel"
+     android:background="@drawable/edittextview"
+     android:hint="Weather Condition"
+     android:paddingLeft="10dp"
+     android:textSize="16sp"/>-->
+
+ <!--<TextView
+     android:id="@+id/soilLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Taluka:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/weatherEditText"
+     android:layout_marginTop="20dp"/>
+
+ <Spinner
+     android:id="@+id/soilEditText"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_below="@id/soilLabel"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:textSize="16sp"/>-->
+ <TextView
+     android:id="@+id/soilLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Soil Type:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/weatherEditText"
+     android:layout_marginTop="20dp"/>
+
+ <EditText
+     android:id="@+id/soilEditText"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/soilLabel"
+     android:background="@drawable/edittextview"
+     android:hint="e.g.Black,Alluvial,Laterite"
+     android:paddingLeft="10dp"
+     android:textSize="16sp"/>
+
+ <!--<TextView
+     android:id="@+id/monthLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Taluka:"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/soilEditText"
+     android:layout_marginTop="20dp"/>
+
+ <Spinner
+     android:id="@+id/monthEditText"
+     android:layout_width="match_parent"
+     android:layout_height="48dp"
+     android:layout_below="@id/monthLabel"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittextview"
+     android:textColor="@android:color/black"
+     android:textSize="16sp"/>-->
+ <TextView
+     android:id="@+id/monthLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Enter Month (1-12):"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="@color/Green"
+     android:layout_below="@id/soilEditText"
+     android:paddingLeft="10dp"
+     android:layout_marginTop="20dp"/>
+
+ <EditText
+     android:id="@+id/monthEditText"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/monthLabel"
+     android:background="@drawable/edittextview"
+     android:hint="Enter Month (1-12)"
+     android:paddingLeft="10dp"
+     android:textSize="16sp"/>
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/predictButton"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/monthEditText"
+     android:layout_marginTop="20dp"
+     android:text="Get Prediction"
+     android:background="@drawable/custombtn"
+     android:textColor="@color/white"
+     android:textSize="16sp"/>
+
+ <TextView
+     android:id="@+id/resultTextView"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/predictButton"
+     android:layout_marginTop="16dp"
+     android:text="Waiting for prediction..."
+     android:textColor="@color/Green"
+     android:textStyle="bold"
+     android:textSize="18sp"/>
+
+</RelativeLayout>

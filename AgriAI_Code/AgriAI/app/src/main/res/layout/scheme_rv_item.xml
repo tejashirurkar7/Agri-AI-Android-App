@@ -1,0 +1,121 @@
+<!--<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Scheme"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textColor="@color/whiteTextColor"
+        android:id="@id/txt_feedbackview"
+        android:background="@color/BlueGreen"
+        />-->
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txt_feedbackview"
+        android:elevation="8dp">
+        <!--text view for our course name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".rv_layout">
+
+        <!--text view for our course name-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Scheme Name : "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/idTVSchemeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scheme Name"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Scheme Type : "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/idTVSchemeEligibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scheme Type"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!--text view for our course tracks-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Link : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Link"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Duration : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idTVSchemeDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Duration"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+<!--
+
+</RelativeLayout>-->
